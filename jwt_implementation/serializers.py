@@ -1,7 +1,6 @@
 # serializers.py
 from rest_framework import serializers
-from ..appauth.models import CustomUser
-
+from customusers.models import CustomUser
 class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
@@ -14,5 +13,3 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             password=validated_data['password'],
         )
         return user
-
-# class tokenserializer(serializers.)

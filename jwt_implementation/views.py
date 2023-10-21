@@ -1,26 +1,3 @@
-# from rest_framework_simplejwt.views import TokenObtainPairView
-# from rest_framework import status
-# from rest_framework.response import Response
-# from rest_framework_simplejwt.tokens import RefreshToken
-
-# from rest_framework_simplejwt.tokens import RefreshToken
-# from rest_framework.response import Response
-# from rest_framework.views import APIView
-
-# class CustomTokenObtainPairView(APIView):
-#     def post(self, request):
-#         # Create a new RefreshToken
-#         refresh_token = RefreshToken()
-
-#         # Access the access token and refresh token tokens
-#         access_token = str(refresh_token.access_token)
-#         refresh_token = str(refresh_token)
-
-#         return Response({
-#             'access_token': access_token,
-#             'refresh_token': refresh_token,
-#         })
-
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.views import APIView
 from rest_framework.response import Response
